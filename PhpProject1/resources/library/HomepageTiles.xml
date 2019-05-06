@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tiles>
+    <tile>
+        <title>Title 1</title>
+        <image-link>Image Link 1</image-link>
+        <description>This is a description for title 1</description>
+    </tile>
+    <tile>
+        <title>Title 2</title>
+        <image-link>Image Link 2</image-link>
+        <description>This is a description for title 2</description>
+    </tile>
+    <tile>
+        <title>Title 3</title>
+        <image-link>Image Link 3</image-link>
+        <description>This is a description for title 3</description>
+    </tile>
+    <tile>
+        <title>Title 4</title>
+        <image-link>Image Link 4</image-link>
+        <description>This is a description for title 4</description>
+    </tile>
+    <tile>
+        <title>Title 5</title>
+        <image-link>Image Link 5</image-link>
+        <description>This is a description for title 5</description>
+    </tile>
+    <tile>
+        <title>Title 6</title>
+        <image-link>Image Link 6</image-link>
+        <description>This is a description for title 6</description>
+    </tile>
+</tiles>
