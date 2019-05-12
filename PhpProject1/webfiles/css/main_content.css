@@ -57,3 +57,44 @@ body {
 #header .nav li a:hover {
     color: #000;
 }
+
+.tile-area {
+    margin-bottom: 40px;
+}
+.tile-block {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+.form-element {
+    width: 400px;
+    margin-bottom: 20px;
+    
+}
+
+.form-element label {
+    width: 40%;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.form-element input,
+.form-element select {
+    display: inline-block;
+    font-size: 20px;
+    width: 57%;
+}
+
+#formSubmit {
+    font-size: 20px;
+    padding: 10px 20px;
+    background: #F1F1F1;
+    border: 2px solid black;
+}
+
+#formSubmit:hover {
+    cursor: pointer;
+    background: #FFF;
+    border-color: #F1F1F1;
+}

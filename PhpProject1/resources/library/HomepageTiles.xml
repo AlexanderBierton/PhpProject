@@ -15,19 +15,4 @@
         <image-link>Image Link 3</image-link>
         <description>This is a description for title 3</description>
     </tile>
-    <tile>
-        <title>Title 4</title>
-        <image-link>Image Link 4</image-link>
-        <description>This is a description for title 4</description>
-    </tile>
-    <tile>
-        <title>Title 5</title>
-        <image-link>Image Link 5</image-link>
-        <description>This is a description for title 5</description>
-    </tile>
-    <tile>
-        <title>Title 6</title>
-        <image-link>Image Link 6</image-link>
-        <description>This is a description for title 6</description>
-    </tile>
 </tiles>
