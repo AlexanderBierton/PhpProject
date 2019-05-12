@@ -2,22 +2,22 @@
 
 class createFile {
     private $dir;
-    private $ListItem = [];
+    private $ListItem = array();
     private $filename = "userInput";
+    private $myFile;
     public function __construct(string $url) {
         $this->dir = $url;
     }
     
     public function addItem($key, $value)
     {
-        $iReturn = 1;
+        $item = array($key => $value);
         try {
-            array_push($ListItem, $key, $value);
+            $this->ListItem = array_merge($this->ListItem, $item);
         } catch (Exception $ex) {
-            $iReturn = -1;
+            echo "ERROR PUSHING TO ARRAY";
         }
         
-        return iReturn;
     }
     
     public function createFile(){
@@ -44,7 +44,9 @@ class createFile {
             {
                 $this->filename .= ".txt";
             }
-            $myFile = fopen($this->dir . DIRECTORY_SEPARATOR . $this->filename, 'x+');
+            $this->myFile = fopen($this->dir . DIRECTORY_SEPARATOR . $this->filename, 'x+');
+            
+            $this->writeToFile();
             
         } catch (Exception $ex) {
             
@@ -64,6 +66,13 @@ class createFile {
             }
         }
         return $iNumOf;
+    }
+    
+    private function writeToFile() {
+        foreach($this->ListItem as $key => $value)
+        {
+            fwrite($this->myFile, $key . ":" . $value . PHP_EOL);
+        }
     }
     
 }

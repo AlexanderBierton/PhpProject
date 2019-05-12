@@ -19,11 +19,14 @@
         $file = new createFile("C:\Users\alexa\Desktop" . DIRECTORY_SEPARATOR);
         if($_SERVER['REQUEST_METHOD'] === 'POST')
         {
+            $file->addItem("Name", $_POST["nameInput"]);
+            $file->addItem("Age", $_POST["ageInput"]);
+            $file->addItem("Quantity", $_POST["quantityInput"]);
+            $file->addItem("Type", $_POST["typeInput"]);
+            
             $file->createFile();
         }
-        
-        
-        
+
         ?>
         <form action="index.php" method="post">
             <div class="form-element">
